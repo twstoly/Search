@@ -1,0 +1,73 @@
+.card{
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 5px silver;
+    min-height: 200px;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    padding: 10px;
+    margin: 0;
+}
+ul li{
+    margin-right: 20px;
+    display: inline;
+}
+.profilebtn{
+    width: 100%
+}
+.silver{
+    color: rgb(107, 106, 106);
+}
+.red{
+    color: red;;
+}
+.green{
+    color: lawngreen;
+}
+.black{
+    color: black;
+}
+.btncolor{
+    background-color: black;
+    color: white;
+}
+.back{
+    background-color: #144552;
+}
+.yellow{
+    color: yellow;
+}
+.aqua{
+    color: aqua;
+}
+.orange{
+    color: orange;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+h5.card-title{
+    color: rgb(218, 27, 27);
+    text-transform: capitalize;
+}h5.card-title a{
+    color: rgb(68, 68, 68);
+    text-transform: capitalize;
+}
+h5.card-title:hover{
+    text-decoration: underline;
+}
+.repos{
+    padding: 15px;
+}
+input{
+    padding-left: 20px;
+}
+.outer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.card-link{
+    color: green;
+}
