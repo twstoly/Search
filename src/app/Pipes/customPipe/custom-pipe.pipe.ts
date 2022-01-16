@@ -18,6 +18,16 @@ export class CustomPipePipe implements PipeTransform {
 
     let counter = Math.floor(dateDifferenceSeconds/seconds)
 
+    if(counter >= 1 && value > nowWithoutTime){
+      return(null);
+    }else if(counter == 30){
+      return ("You have jst posted a few seconds ago..")
+    }else if(counter == 0){
+      return ("This is the last Day: " + counter)
+    }
+    else{
+      return ("The date passed: " + counter + " days ago");
+    }
   }
 
 }
