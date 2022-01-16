@@ -3,7 +3,53 @@
         <input class="form-control shadow-none" type="text" placeholder="Enter Name" [(ngModel)] ="username" name="username" (keyup)="findUserProfile()">
     </div>
 </form>
+<div appBackground class="row">
+    <div class="outer col-md-3">
+        <div class="">
+            <img *ngIf="userProfile" class="img-circle rounded-circle  img-progressive" src="{{userProfile.avatar_url}} || ../../../assets/uwp1786364.jpeg"  width=200 height="200" alt="">
+        </div>
+        <div>
+            <h5>
+                <a href="{{userProfile.url}}">
+                    <b>{{userProfile.name}}</b>
+                </a>
+            </h5>
+            <p class="silver">
+                <a href="{{userProfile.url}}">
+                    {{userProfile.login}}
+                </a>
+            </p>
+        </div>
+        <button class="profilebtn btn btn-dark">Edit userProfile</button>
+        <p>{{userProfile.bio}}</p>
+        <div>
+            <i class="green fas fa-users"></i>
+            <span>
+                <a href="{{userProfile.followers_url}}">
+                    <b class="red"> {{userProfile.followers}} </b> Followers
+                </a> 
+                <!-- <b>Followers numebrs.</b> -->
 
+                <a href="{{userProfile.following_url}}">
+                    <b class="red"> {{userProfile.following}} </b> Following
+                </a>
+            </span>
+            <!-- <b>Following numebrs.</b> -->
+        </div>
+        <div>
+            <!-- <h5>Location</h5> -->
+            <i class="red fas fa-map-marker-alt"></i>
+            <span> {{userProfile.location}}</span>
+            <br>
+            <!-- email -->
+            <i class="green far fa-envelope"></i>
+            <span class="silver"> {{userProfile.email}}</span>
+        </div>
+    </div>
+
+
+
+</div>
 
 
 
