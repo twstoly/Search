@@ -15,7 +15,24 @@ export class ServiceRequestService {
   constructor(private http: HttpClient) {
     this.username = ""
   }
+  searchRequest(term: string){
 
+    let promise = new Promise((resolve,reject)=>{
+      let apiURL = (environment.apiUrl + term);
+      this.http.get(apiURL).toPromise().then(res =>{
+          console.log(res);
+          this.user = res;
+
+          resolve("Success")
+        },
+        error=>{
+          
+          reject(error)
+        }
+      )
+    });
+    return promise
+  }
   getUserProfileInfo(){
     return this.http.get(environment.apiUrl + this.username + "?client_id=" + this.clientId + "&client_secret=" + this.clientSecret);
   }
