@@ -77,7 +77,64 @@
 
         <hr>
 
+        <h5><b>Popular Repositories</b></h5>
+        <div class="row">
+            <div class="col-md-6" *ngFor="let repo of userRepos">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">
+                        <a target="_blank" href="{{repo.html_url}} "> {{repo.name}}  </a>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted"> <span>{{repo.visibility}}</span> </h6>
+                    <p class="card-text">{{repo.description}}</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
 
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">Ad astra</h5>
+                    <h6 class="card-subtitle mb-2 text-muted"> <span>public</span> </h6>
+                    <p class="card-text">The design reinvents the museum’s public spaces through a continuous stainless steel surface that moves lithely through
+                        the museum’s interior and exterior spaces. Wall and ceiling become one fluid surface which captures the spatial volume
+                        while guiding the public through entry points, wrapping event and gathering spaces, and leading on to the galleries.</p>
+                    <a class="card-link">MIT License</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">Hitch Guide</h5>
+                    <h6 class="card-subtitle mb-2 text-muted"> <span>public</span> </h6>
+                    <p class="card-text">Crafted of patinaed zinc, high performance glazing, and stainless steel, the building has a timeless appearance and
+                        extraordinary durability in the northern climate. Transparent glazing planes and reflective metal surfaces animate the
+                        building, exposing the activities within and engaging people and art at multiple levels on both the interior and exterior.</p>
+                    <a class="card-link">MIT License</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">twst</h5>
+                    <h6 class="card-subtitle mb-2 text-muted"> <span>public</span> </h6>
+                    <p class="card-text">The new Art Gallery of Alberta is an engaging and inviting visual arts center in downtown Edmonton, Alberta. Celebrating
+                        its prominent location on Sir Winston Churchill Square, the city’s arts and government core, the building’s architectural
+                        design formally and philosophically extends out into the community, welcoming visitors of all ages and backgrounds to
+                        experience contemporary art firsthand. Designed by Los Angels-based Randall Stout Architects, the Gallery will open to
+                        the public in January 2010.</p>
+                    <a class="card-link">MIT LIcense</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
