@@ -6,7 +6,7 @@
 <div appBackground class="row">
     <div class="outer col-md-3">
         <div class="">
-            <img *ngIf="userProfile" class="img-circle rounded-circle  img-progressive" src="{{userProfile.avatar_url}} || ../../../assets/uwp1786364.jpeg"  width=200 height="200" alt="">
+            <img *ngIf="userProfile" class="img-circle rounded-circle  img-progressive" src="{{userProfile.avatar_url}} "  width=200 height="200" alt="">
         </div>
         <div>
             <h5>
@@ -50,7 +50,7 @@
     <div class="col-md-9 card repos">
         <ul>
             <li>
-                <a target="_blank" href="https://github.com/twstoly">
+                <a target="_blank" href="https://github.com/{{username}}">
                     <i class="red fas fa-book-open"></i> Overview
                 </a>
             <li>
@@ -59,17 +59,17 @@
                 </a>
             </li>
             <li>
-                <a target="_blank" href="https://github.com/twstoly?tab=packages">
+                <a target="_blank" href="https://github.com/{{username}}?tab=packages">
                     <i class="yellow fas fa-box-open"></i> Packages
                 </a>
             </li>
             <li>
-                <a target="_blank" href="https://github.com/twstoly?tab=projects&type=beta">
+                <a target="_blank" href="https://github.com/{{username}}?tab=projects&type=beta">
                     <i class="orange fas fa-tasks"></i> Projects
                 </a>
             </li>
             <li>
-                <a target="_blank" href="{{userProfile.starred_url}}">
+                <a target="_blank" href="https://github.com/{{username}}?tab=stars">
                     <i class="aqua far fa-star"></i> Stars <b class="silver"></b>
                 </a>
             </li>
